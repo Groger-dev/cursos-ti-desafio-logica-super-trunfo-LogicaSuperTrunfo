@@ -65,7 +65,7 @@ int main() {
     printf("PIB: %.2f\n", PIB1);
     printf("Pontos turísticos: %d\n", turismo1);
     printf("Densidade populacional: %.2f hab/km²\n", densipop1);
-    printf("PIB per capita: %.2f reais\n", pibcap1);
+    printf("PIB per capita: R$ %.2f\n", pibcap1);
 
 
     //Cadastro da segunda carta
@@ -107,7 +107,7 @@ int main() {
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos turísticos: %d\n", turismo2);
     printf("Densidade populacional: %.2f hab/km²\n", densipop2);
-    printf("PIB per capita: %.2f reais\n", pibcap2);
+    printf("PIB per capita: R$ %.2f\n", pibcap2);
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
@@ -142,13 +142,13 @@ int main() {
      printf("**Disputa de População**\n");
     if (populacao1 > populacao2){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %lu\n", cidade1, populacao1);
-        printf("%s: %lu\n", cidade2, populacao2);
+        printf("%s: %lu habitantes\n", cidade1, populacao1);
+        printf("%s: %lu habitantes\n", cidade2, populacao2);
 
     } else if (populacao1 < populacao2){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %lu\n", cidade2, populacao2);
-        printf("%s: %lu\n", cidade1, populacao1);
+        printf("%s: %lu habitantes\n", cidade2, populacao2);
+        printf("%s: %lu habitantes\n", cidade1, populacao1);
 
     } else {
         printf("Empate! As duas cidades possuem o mesmo número de habitantes!\n");
@@ -160,13 +160,13 @@ int main() {
      printf("**Disputa de Área**\n");
     if (area1 > area2){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %.2f\n", cidade1, area1);
-        printf("%s: %.2f\n", cidade2, area2);
+        printf("%s: %.2f\n km²", cidade1, area1);
+        printf("%s: %.2f\n km²", cidade2, area2);
         
     } else if (area1 < area2){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %.2f\n", cidade2, area2);
-        printf("%s: %.2f\n", cidade1, area1);
+        printf("%s: %.2f km²\n", cidade2, area2);
+        printf("%s: %.2f km²\n", cidade1, area1);
 
     } else {
         printf("Empate! As duas cidades apresentam a mesma área!\n");
@@ -178,13 +178,13 @@ int main() {
      printf("**Disputa de PIB**\n");
     if (PIB1 > PIB2){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %.2f\n", cidade1, PIB1);
-        printf("%s: %.2f\n", cidade2, PIB2);
+        printf("%s: R$ %.2f\n", cidade1, PIB1);
+        printf("%s: R$ %.2f\n", cidade2, PIB2);
 
     } else if (PIB1 < PIB2){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %.2f\n", cidade2, PIB2);
-        printf("%s: %.2f\n", cidade1, PIB1);
+        printf("%s: R$ %.2f\n", cidade2, PIB2);
+        printf("%s: R$ %.2f\n", cidade1, PIB1);
 
     } else {
         printf("Empate! As duas cidades possuem PIB iguais!\n");
@@ -196,13 +196,13 @@ int main() {
      printf("**Disputa de Turismo**\n");
     if (turismo1 > turismo2){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %d\n", cidade1, turismo1);
-        printf("%s: %d\n", cidade2, turismo2);
+        printf("%s: %d pontos turísticos\n", cidade1, turismo1);
+        printf("%s: %d pontos turísticos\n", cidade2, turismo2);
 
     } else if (turismo1 < turismo2){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %d\n", cidade2, turismo2);
-        printf("%s: %d\n", cidade1, turismo1);
+        printf("%s: %d pontos turísticos\n", cidade2, turismo2);
+        printf("%s: %d pontos turísticos\n", cidade1, turismo1);
 
     } else {
         printf("Empate! As duas cidades possuem o mesmo número de pontos turísticos!\n");
@@ -214,13 +214,13 @@ int main() {
      printf("**Disputa de Densidade Populacional**\n");
     if (densipop2 > densipop1){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %.2f\n", cidade1, densipop1);
-        printf("%s: %.2f\n", cidade2, densipop2);
+        printf("%s: %.2f hab/km²\n", cidade1, densipop1);
+        printf("%s: %.2f hab/km²\n", cidade2, densipop2);
 
     } else if (densipop2 < densipop1){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %.2f\n", cidade2, densipop2);
-        printf("%s: %.2f\n", cidade1, densipop1);
+        printf("%s: %.2f hab/km²\n", cidade2, densipop2);
+        printf("%s: %.2f hab/km²\n", cidade1, densipop1);
 
     } else {
         printf("Empate! As duas cidades possuem valores iguais de densidade populacional\n");
@@ -232,13 +232,13 @@ int main() {
      printf("**Disputa de PIB per capita**\n");
     if (pibcap1 > pibcap2){
         printf("%s venceu!\n", cidade1);
-        printf("%s: %.2f\n", cidade1, pibcap1);
-        printf("%s: %.2f\n", cidade2, pibcap2);
+        printf("%s: %.2f per capita\n", cidade1, pibcap1);
+        printf("%s: %.2f per capita\n", cidade2, pibcap2);
 
     } else if (pibcap1 < pibcap2){
         printf("%s venceu!\n", cidade2);
-        printf("%s: %.2f\n", cidade2, pibcap2);
-        printf("%s: %.2f\n", cidade1, pibcap1);
+        printf("%s: %.2f per capita\n", cidade2, pibcap2);
+        printf("%s: %.2f per capita\n", cidade1, pibcap1);
 
     } else {
         printf("Empate! As duas cidades possuem mesmo PIB per capita!\n");
